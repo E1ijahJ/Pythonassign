@@ -43,7 +43,12 @@ def echo_string(string):
     for s in string:
         subprocess.run(['echo'],s)
 
+"""
+    Sequentially prints each element  with a 1-second delay.
 
+    Parameters:
+        items (list): The list of items.
+    """
 def seq_print(items):
     for item in items:
         print(item)
