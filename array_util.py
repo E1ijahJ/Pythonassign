@@ -1,5 +1,6 @@
 import numpy as np
 import subprocess
+import time
 """
     Splits a 3D NumPy array into 8 equally sized chunks and returns the average of each chunk.
 
@@ -42,4 +43,9 @@ def echo_string(string):
     for s in string:
         subprocess.run(['echo'],s)
 
+
+def seq_print(items):
+    for item in items:
+        print(item)
+        time.sleep(1)
 
